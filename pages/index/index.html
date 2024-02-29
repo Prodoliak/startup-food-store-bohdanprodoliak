@@ -1,62 +1,193 @@
-<header class="header">
-	<div class="container">
-		<a href="" class="header_logo">
-			<img src="/bohdanprodoliak/img/logo.svg" alt="" />
-		</a>
-		<div class="burger-wrap">
-			<div class="burger"></div>
-		</div>
-		<div class="header_links">
-			<div class="header_links-item">
-				<a href="">
-					<img src="/bohdanprodoliak/img/call.svg" alt="" />
+<div class="first-page">
+	<header class="header">
+		<div class="container">
+			<div class="header_wrap">
+				<a href="" class="header_logo">
+					<img src="/bohdanprodoliak/img/logo.svg" alt="" />
 				</a>
+				<div class="burger-wrap">
+					<div class="burger"></div>
+				</div>
+				<ul class="header_nav">
+					<li><a href="/">Наша кав*ярня</a></li>
+					<li><a href="/products">Наше меню</a></li>
+					<li><a href="/articles">Наші статьї</a></li>
+				</ul>
+				<div class="header_links">
+					<div class="header_links-item">
+						<a href="">
+							<img src="/bohdanprodoliak/img/call.svg" alt="" />
+						</a>
+					</div>
+					<div class="header_links-item">
+						<a href="">
+							<img src="/bohdanprodoliak/img/cart.svg" alt="" />
+						</a>
+					</div>
+				</div>
 			</div>
-			<div class="header_links-item">
-				<a href="">
-					<img src="/bohdanprodoliak/img/cart.svg" alt="" />
-				</a>
+		</div>
+	</header>
+	<div class="container">
+		<div class="first-page_title">
+			НАЗВА
+			<span>НАШОЇ КАВЯРНІ 
+		</div>
+		<div class="first-page_description">
+			It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+			<span>The point of using Lorem Ipsum is</span> that it <span>has a more-or-less normal distribution</span> of letters, as opposed to using 'Content here, content here'
+		</div>
+		<a href="#menu-land" class="first-page_btn">
+			ОБРАТИ КАВУ
+		</a>
+	</div>
+</div>
+<div class="menu-land" id="menu-land">
+	<div class="container">
+		<div class="menu-land_global-title">
+			Меню
+		</div>
+		<div class="menu-land_wrapper">
+			<div class="menu-land_item">
+				<div class="menu-land_wrap">
+					<div class="menu-land_img">
+						<img src="/bohdanprodoliak/img/menu.png" alt="">
+					</div>
+					<div class="menu-land_title">
+						Назва кави
+					</div>
+					<div class="menu-land_description">
+						It is a long established fact that a reader will be distracted by the
+					</div>
+					<div class="menu-land_settings">
+						<div class="menu-land_settings-money">
+							250 грн
+						</div>
+						<div class="menu-land_settings-ml">
+							120 мл
+						</div>
+					</div>
+					<div class="menu-land_btn">
+						ОБРАТИ КАВУ
+					</div>
+				</div>
+			</div>
+			<div class="menu-land_item">
+				<div class="menu-land_wrap">
+					<div class="menu-land_img">
+						<img src="/bohdanprodoliak/img/menu.png" alt="">
+					</div>
+					<div class="menu-land_title">
+						Назва кави
+					</div>
+					<div class="menu-land_description">
+						It is a long established fact that a reader will be distracted by the
+					</div>
+					<div class="menu-land_settings">
+						<div class="menu-land_settings-money">
+							250 грн
+						</div>
+						<div class="menu-land_settings-ml">
+							120 мл
+						</div>
+					</div>
+					<div class="menu-land_btn">
+						ОБРАТИ КАВУ
+					</div>
+				</div>
+			</div>
+			<div class="menu-land_item">
+				<div class="menu-land_wrap">
+					<div class="menu-land_img">
+						<img src="/bohdanprodoliak/img/menu.png" alt="">
+					</div>
+					<div class="menu-land_title">
+						Назва кави
+					</div>
+					<div class="menu-land_description">
+						It is a long established fact that a reader will be distracted by the
+					</div>
+					<div class="menu-land_settings">
+						<div class="menu-land_settings-money">
+							250 грн
+						</div>
+						<div class="menu-land_settings-ml">
+							120 мл
+						</div>
+					</div>
+					<div class="menu-land_btn">
+						ОБРАТИ КАВУ
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="/products" target="_blank" class="first-page_btn menu-land_main-btn">
+			Всі напої
+		</a>
+	</div>
+</div>
+<div class="slider">
+	<div class="container">
+		<div class="slider_title">
+			Наш ресторан
+		</div>
+		<div class="slider_wrapper">
+			<div class="slider_init">
+				<div class="slider_photo">
+					<img src="/bohdanprodoliak/img/slider/1.png" alt="">
+				</div>
+				<div class="slider_photo">
+					<img src="/bohdanprodoliak/img/slider/1.png" alt="">
+				</div>
+				<div class="slider_photo">
+					<img src="/bohdanprodoliak/img/slider/1.png" alt="">
+				</div>
 			</div>
 		</div>
 	</div>
-</header>
-<div class="main">
+</div>
+<div class="articles">
 	<div class="container">
-		<div class="main_page">Головна - <span>Меню кав*ярні</span></div>
-		<div class="main_title">Меню</div>
-		<div class="main_wrap">
-			<div class="main_sidebar-burger">Меню -</div>
-			<div class="main_sidebar">
-				<div class="main_sidebar-content">
-					{% for tag in tags %}
-					<div class="main_sidebar-item">
-						<a href="products/#{{{tag.id}}}" class="main_sidebar-title"> {{{tag.name}}} </a>
+		<div class="articles_global-title">
+			Наші статтї
+		</div>
+		<div class="articles_wrapper">
+			<div class="articles_item">
+				<div class="articles_wrap">
+					<div class="articles_img">
+						<img src="/bohdanprodoliak/img/article.png" alt="">
 					</div>
-					{% endfor %}
+					<div class="articles_title">
+						Назва кави
+					</div>
+					<div class="articles_desc">
+						It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+					</div>
+					<a href="/article" target="_blank" class="articles_more">
+						Read more
+					</a>
 				</div>
 			</div>
-			<div class="main_center">
-				<div class="main_center-wrap">
-					<div class="menu-list">
-						{% for tag in tags %}
-						<div class="menu_category" id="{{{tag.id}}}">{{{tag.name}}}</div>
-						{% for product in tag.products %}
-						<div class="menu-list_item">
-							<div class="menu-list_item-text">
-								<div class="menu-list_title">{{{product.name}}}</div>
-								<div class="menu-list_desc">{{{product.description}}}</div>
-								<div class="menu-list_price">{{{product.price}}}</div>
-							</div>
-							<div class="menu-list_item-img">
-								<img src="{{{product.thumb}}}" alt="">
-							</div>
-						</div>
-						{% endfor %}
-						{% endfor %}
+			<div class="articles_item">
+				<div class="articles_wrap">
+					<div class="articles_img">
+						<img src="/bohdanprodoliak/img/article.png" alt="">
 					</div>
+					<div class="articles_title">
+						Назва кави
+					</div>
+					<div class="articles_desc">
+						It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+					</div>
+					<a href="/article" target="_blank" class="articles_more">
+						Read more
+					</a>
 				</div>
 			</div>
 		</div>
+		<a href="/articles" target="_blank" class="first-page_btn articles_item-btn">
+			Всі статьї
+		</a>
 	</div>
 </div>
 <footer class="footer">
@@ -69,7 +200,13 @@
 				<button class="footer_logo-btn">Увійти</button>
 			</div>
 			<div class="footer_links">
-				<!-- <div class="footer_links-item">
+				<div class="footer_links-item">
+					<div class="footer_links-title">Title of links</div>
+					<a href="" class="footer_links-link"> Про нас </a>
+					<a href="" class="footer_links-link"> Про нас </a>
+					<a href="" class="footer_links-link"> Про нас </a>
+				</div>
+				<div class="footer_links-item">
 					<div class="footer_links-title">Title of links</div>
 					<a href="" class="footer_links-link"> Про нас </a>
 					<a href="" class="footer_links-link"> Про нас </a>
@@ -82,27 +219,15 @@
 					<a href="" class="footer_links-link"> Про нас </a>
 				</div>
 				<div class="footer_links-item">
-					<div class="footer_links-title">Title of links</div>
-					<a href="" class="footer_links-link"> Про нас </a>
-					<a href="" class="footer_links-link"> Про нас </a>
-					<a href="" class="footer_links-link"> Про нас </a>
-				</div> -->
-				{% if variables.tel || variables.workingHours %}
-				<div class="footer_links-item">
-					{% if variables.tel %}
-					<a href="tel:{{{variables.tel}}}">
+					<a href="">
 						<img src="/bohdanprodoliak/img/callb.svg" alt="" />
 						<span>{{{variables.tel}}}</span>
 					</a>
-					{% endif %}
-					{% if variables.workingHours %}
 					<a href="">
 						<img src="/bohdanprodoliak/img/clock.svg" alt="" />
 						<span>{{{variables.workingHours}}}</span>
 					</a>
-					{% endif %}
 				</div>
-				{% endif %}
 			</div>
 		</div>
 	</div>

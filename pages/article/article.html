@@ -1,6 +1,123 @@
+<!---
 <h1>{{{article.name}}}</h1>
 <img src="{{{article.thumb}}}" alt="{{{article.name}}}">
 <pre>{{{article.description|safe}}}</pre>
 {% if article.reference %}
 <a href="{{{article.reference}}}">{{{article.reference}}}</a>
 {% endif %}
+-->
+<!--{% for article in articles %}
+<a href="/article/{{{article.id}}}" class="article__item">
+	<h1>{{{article.name}}}</h1>
+	<img src="{{{article.thumb}}}" alt="{{{article.name}}}">
+	<pre>
+		{{{article.short}}}
+	</pre>
+</a>
+{% endfor %}
+-->
+<header class="header">
+	<div class="container">
+		<div class="header_wrap">
+			<a href="" class="header_logo">
+				<img src="/bohdanprodoliak/img/logo.svg" alt="" />
+			</a>
+			<div class="burger-wrap">
+				<div class="burger"></div>
+			</div>
+			<ul class="header_nav">
+				<li><a href="/">Наша кав*ярня</a></li>
+				<li><a href="/products">Наше меню</a></li>
+				<li><a href="/articles">Наші статьї</a></li>
+			</ul>
+			<div class="header_links">
+				<div class="header_links-item">
+					<a href="">
+						<img src="/bohdanprodoliak/img/call.svg" alt="" />
+					</a>
+				</div>
+				<div class="header_links-item">
+					<a href="">
+						<img src="/bohdanprodoliak/img/cart.svg" alt="" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="articles">
+	<div class="container">
+        <div class="article-list">
+            <div class="article-list_title">
+                Назва для нашої сторінки
+            </div>
+            <div class="article-list_img">
+                <img src="/bohdanprodoliak/img/article.png" alt="">
+            </div>
+            <div class="article-list_subtitle">
+                Назва для нашої сторінки
+            </div>
+            <div class="article-list_description">
+                <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                </p>
+                <p>
+                    Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                </p>
+            </div>
+        </div>
+		<a href="" class="first-page_btn article-list_btn">
+			Всі статьї
+		</a>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer_wrap">
+			<div class="footer_logo">
+				<a href="">
+					<img src="/bohdanprodoliak/img/black.svg" alt="" />
+				</a>
+				<button class="footer_logo-btn">Увійти</button>
+			</div>
+			<div class="footer_links">
+				<!-- <div class="footer_links-item">
+					<div class="footer_links-title">Title of links</div>
+					<a href="" class="footer_links-link"> Про нас </a>
+					<a href="" class="footer_links-link"> Про нас </a>
+					<a href="" class="footer_links-link"> Про нас </a>
+				</div>
+				<div class="footer_links-item">
+					<div class="footer_links-title">Title of links</div>
+					<a href="" class="footer_links-link"> Про нас </a>
+					<a href="" class="footer_links-link"> Про нас </a>
+					<a href="" class="footer_links-link"> Про нас </a>
+				</div>
+				<div class="footer_links-item">
+					<div class="footer_links-title">Title of links</div>
+					<a href="" class="footer_links-link"> Про нас </a>
+					<a href="" class="footer_links-link"> Про нас </a>
+					<a href="" class="footer_links-link"> Про нас </a>
+				</div> -->
+				{% if variables.tel || variables.workingHours %}
+				<div class="footer_links-item">
+					{% if variables.tel %}
+					<a href="tel:{{{variables.tel}}}">
+						<img src="/bohdanprodoliak/img/callb.svg" alt="" />
+						<span>{{{variables.tel}}}</span>
+					</a>
+					{% endif %}
+					{% if variables.workingHours %}
+					<a href="">
+						<img src="/bohdanprodoliak/img/clock.svg" alt="" />
+						<span>{{{variables.workingHours}}}</span>
+					</a>
+					{% endif %}
+				</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+	<div class="footer_cop">(C) Create by Bogdan Prodolyak</div>
+</footer>

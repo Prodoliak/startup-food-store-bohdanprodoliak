@@ -1,4 +1,4 @@
-{% for article in articles %}
+<!--{% for article in articles %}
 <a href="/article/{{{article.id}}}" class="article__item">
 	<h1>{{{article.name}}}</h1>
 	<img src="{{{article.thumb}}}" alt="{{{article.name}}}">
@@ -7,3 +7,159 @@
 	</pre>
 </a>
 {% endfor %}
+-->
+<header class="header">
+	<div class="container">
+		<div class="header_wrap">
+			<a href="" class="header_logo">
+				<img src="/bohdanprodoliak/img/logo.svg" alt="" />
+			</a>
+			<div class="burger-wrap">
+				<div class="burger"></div>
+			</div>
+			<ul class="header_nav">
+				<li><a href="/">Наша кав*ярня</a></li>
+				<li><a href="/products">Наше меню</a></li>
+				<li><a href="/articles">Наші статьї</a></li>
+			</ul>
+			<div class="header_links">
+				<div class="header_links-item">
+					<a href="">
+						<img src="/bohdanprodoliak/img/call.svg" alt="" />
+					</a>
+				</div>
+				<div class="header_links-item">
+					<a href="">
+						<img src="/bohdanprodoliak/img/cart.svg" alt="" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="articles">
+	<div class="container">
+		<div class="articles_global-title">
+			Наші статтї
+		</div>
+		<div class="articles_wrapper">
+			<div class="articles_item">
+				<div class="articles_wrap">
+					<div class="articles_img">
+						<img src="/bohdanprodoliak/img/article.png" alt="">
+					</div>
+					<div class="articles_title">
+						Назва кави
+					</div>
+					<div class="articles_desc">
+						It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+					</div>
+					<a href="/article" target="_blank" class="articles_more">
+						Read more
+					</a>
+				</div>
+			</div>
+			<div class="articles_item">
+				<div class="articles_wrap">
+					<div class="articles_img">
+						<img src="/bohdanprodoliak/img/article.png" alt="">
+					</div>
+					<div class="articles_title">
+						Назва кави
+					</div>
+					<div class="articles_desc">
+						It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+					</div>
+					<a href="/article" target="_blank" class="articles_more">
+						Read more
+					</a>
+				</div>
+			</div>
+			<div class="articles_item">
+				<div class="articles_wrap">
+					<div class="articles_img">
+						<img src="/bohdanprodoliak/img/article.png" alt="">
+					</div>
+					<div class="articles_title">
+						Назва кави
+					</div>
+					<div class="articles_desc">
+						It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+					</div>
+					<a href="/article" target="_blank" class="articles_more">
+						Read more
+					</a>
+				</div>
+			</div>
+			<div class="articles_item">
+				<div class="articles_wrap">
+					<div class="articles_img">
+						<img src="/bohdanprodoliak/img/article.png" alt="">
+					</div>
+					<div class="articles_title">
+						Назва кави
+					</div>
+					<div class="articles_desc">
+						It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+					</div>
+					<a href="/article" target="_blank" class="articles_more">
+						Read more
+					</a>
+				</div>
+			</div>
+		</div>
+		<a href="" class="first-page_btn">
+			Всі статьї
+		</a>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer_wrap">
+			<div class="footer_logo">
+				<a href="">
+					<img src="/bohdanprodoliak/img/black.svg" alt="" />
+				</a>
+				<button class="footer_logo-btn">Увійти</button>
+			</div>
+			<div class="footer_links">
+				<!-- <div class="footer_links-item">
+					<div class="footer_links-title">Title of links</div>
+					<a href="" class="footer_links-link"> Про нас </a>
+					<a href="" class="footer_links-link"> Про нас </a>
+					<a href="" class="footer_links-link"> Про нас </a>
+				</div>
+				<div class="footer_links-item">
+					<div class="footer_links-title">Title of links</div>
+					<a href="" class="footer_links-link"> Про нас </a>
+					<a href="" class="footer_links-link"> Про нас </a>
+					<a href="" class="footer_links-link"> Про нас </a>
+				</div>
+				<div class="footer_links-item">
+					<div class="footer_links-title">Title of links</div>
+					<a href="" class="footer_links-link"> Про нас </a>
+					<a href="" class="footer_links-link"> Про нас </a>
+					<a href="" class="footer_links-link"> Про нас </a>
+				</div> -->
+				{% if variables.tel || variables.workingHours %}
+				<div class="footer_links-item">
+					{% if variables.tel %}
+					<a href="tel:{{{variables.tel}}}">
+						<img src="/bohdanprodoliak/img/callb.svg" alt="" />
+						<span>{{{variables.tel}}}</span>
+					</a>
+					{% endif %}
+					{% if variables.workingHours %}
+					<a href="">
+						<img src="/bohdanprodoliak/img/clock.svg" alt="" />
+						<span>{{{variables.workingHours}}}</span>
+					</a>
+					{% endif %}
+				</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+	<div class="footer_cop">(C) Create by Bogdan Prodolyak</div>
+</footer>
